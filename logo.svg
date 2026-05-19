@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1a3fbf"/>
+      <stop offset="100%" stop-color="#0b0e2d"/>
+    </radialGradient>
+    <radialGradient id="eyeGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ff4444"/>
+      <stop offset="60%" stop-color="#cc0000"/>
+      <stop offset="100%" stop-color="#880000"/>
+    </radialGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="eyeFilter">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="200" height="200" rx="28" fill="url(#bgGrad)"/>
+
+  <!-- Grid lines (subtle market chart bg) -->
+  <g opacity="0.12" stroke="#4466ff" stroke-width="0.8">
+    <line x1="0" y1="50" x2="200" y2="50"/>
+    <line x1="0" y1="100" x2="200" y2="100"/>
+    <line x1="0" y1="150" x2="200" y2="150"/>
+    <line x1="50" y1="0" x2="50" y2="200"/>
+    <line x1="100" y1="0" x2="100" y2="200"/>
+    <line x1="150" y1="0" x2="150" y2="200"/>
+  </g>
+
+  <!-- Ghost/Demon body -->
+  <g filter="url(#glow)">
+    <!-- Horns -->
+    <path d="M78 62 L65 28 L80 50 Z" fill="white" opacity="0.95"/>
+    <path d="M122 62 L135 28 L120 50 Z" fill="white" opacity="0.95"/>
+
+    <!-- Head -->
+    <ellipse cx="100" cy="85" rx="42" ry="40" fill="white" opacity="0.97"/>
+
+    <!-- Body -->
+    <path d="M58 110 Q58 155 100 160 Q142 155 142 110 L142 95 Q142 125 100 125 Q58 125 58 95 Z" fill="white" opacity="0.97"/>
+
+    <!-- Tattered bottom -->
+    <path d="M58 140 L66 155 L74 140 L82 158 L90 140 L100 160 L110 140 L118 158 L126 140 L134 155 L142 140 L142 160 Q100 175 58 160 Z" fill="white" opacity="0.95"/>
+
+    <!-- Chin/beak shape -->
+    <path d="M88 105 L100 118 L112 105 Q100 115 88 105 Z" fill="#1a3fbf" opacity="0.6"/>
+  </g>
+
+  <!-- Eyes -->
+  <g filter="url(#eyeFilter)">
+    <!-- Left eye -->
+    <ellipse cx="86" cy="85" rx="11" ry="8" fill="url(#eyeGlow)"/>
+    <ellipse cx="86" cy="85" rx="5" ry="4" fill="#ff6666"/>
+    <circle cx="86" cy="85" r="2" fill="#ffaaaa"/>
+
+    <!-- Right eye -->
+    <ellipse cx="114" cy="85" rx="11" ry="8" fill="url(#eyeGlow)"/>
+    <ellipse cx="114" cy="85" rx="5" ry="4" fill="#ff6666"/>
+    <circle cx="114" cy="85" r="2" fill="#ffaaaa"/>
+  </g>
+
+  <!-- Arrow (orange upward trend) -->
+  <g opacity="0.9">
+    <line x1="145" y1="155" x2="168" y2="40" stroke="#f97316" stroke-width="4" stroke-linecap="round"/>
+    <polygon points="168,40 158,55 175,52" fill="#f97316"/>
+  </g>
+</svg>

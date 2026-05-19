@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>$DEX — The Coin That Pays Its Own Way</title>
+  <meta name="description" content="$DEX is the memecoin where every fee goes straight back into DEX listings, boosts, and ads. No rugs. Just vibes and volume." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <img src="logo.png" alt="DEX logo" class="nav-logo-img" onerror="this.src='logo.svg'" />
+        <span>$DEX</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#how">How It Works</a></li>
+        <li><a href="#tokenomics">Tokenomics</a></li>
+        <li><a href="#ca">Contract</a></li>
+      </ul>
+      <a href="#buy" class="btn btn-nav">Buy $DEX</a>
+      <button class="nav-burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-mobile" id="navMobile">
+      <a href="#about">About</a>
+      <a href="#how">How It Works</a>
+      <a href="#tokenomics">Tokenomics</a>
+      <a href="#ca">Contract</a>
+      <a href="#buy" class="btn btn-nav">Buy $DEX</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <canvas id="particles"></canvas>
+    <div class="hero-content">
+      <div class="hero-badge">Now Live on Solana</div>
+      <div class="hero-logo-wrap">
+        <img src="logo.png" alt="DEX mascot" class="hero-logo" onerror="this.src='logo.svg'" />
+        <div class="hero-glow"></div>
+      </div>
+      <h1 class="hero-title">
+        The coin that <br /><span class="gradient-text">pays its own way.</span>
+      </h1>
+      <p class="hero-sub">
+        Every creator fee goes back into DEX listings, boosts & ads.<br />
+        Fully self-sustaining. Always visible. Always pumping.
+      </p>
+
+      <!-- CA BOX -->
+      <div class="ca-box" id="ca">
+        <span class="ca-label">Contract Address</span>
+        <div class="ca-inner">
+          <span class="ca-text" id="caText">CA Coming Soon</span>
+          <button class="ca-copy" id="copyBtn" aria-label="Copy address">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="hero-ctas" id="buy">
+        <a href="#" class="btn btn-primary">Buy on Raydium</a>
+        <a href="#" class="btn btn-ghost">View Chart</a>
+      </div>
+
+      <div class="hero-socials">
+        <a href="#" class="social-link" aria-label="Twitter/X">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
+        <a href="#" class="social-link" aria-label="Telegram">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+        </a>
+        <a href="#" class="social-link" aria-label="DEXScreener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M3 3h18v18H3V3zm2 2v14h14V5H5zm2 2h4v2H7V7zm6 0h4v2h-4V7zm-6 4h4v2H7v-2zm6 0h4v2h-4v-2zm-6 4h4v2H7v-2zm6 0h4v2h-4v-2z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint">
+      <span>scroll down</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- TICKER TAPE -->
+  <div class="ticker-wrap">
+    <div class="ticker-track" id="tickerTrack">
+      <span>$DEX</span><span class="up">+420%</span>
+      <span class="dot">•</span>
+      <span>Self-Funded</span>
+      <span class="dot">•</span>
+      <span>$DEX</span><span class="up">Always Listed</span>
+      <span class="dot">•</span>
+      <span>DEX Boosts</span><span class="fire">🔥</span>
+      <span class="dot">•</span>
+      <span>DEX Ads</span><span class="fire">🔥</span>
+      <span class="dot">•</span>
+      <span>$DEX</span><span class="up">+420%</span>
+      <span class="dot">•</span>
+      <span>Self-Funded</span>
+      <span class="dot">•</span>
+      <span>$DEX</span><span class="up">Always Listed</span>
+      <span class="dot">•</span>
+      <span>DEX Boosts</span><span class="fire">🔥</span>
+      <span class="dot">•</span>
+      <span>DEX Ads</span><span class="fire">🔥</span>
+      <span class="dot">•</span>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text">
+          <div class="section-tag">What is $DEX?</div>
+          <h2>A coin that keeps itself<br /><span class="gradient-text">in the game.</span></h2>
+          <p>Most memecoins launch, spike, and disappear. Why? No visibility. No staying power. $DEX fixes that.</p>
+          <p>Every single creator fee collected gets funneled directly into keeping $DEX visible — DEX paid listings, trending boosts, and targeted ads. No team wallet siphoning funds. No promises. Just a self-running machine that keeps $DEX on everyone's radar.</p>
+          <div class="about-pills">
+            <span class="pill">Self-Sustaining</span>
+            <span class="pill">Fully Transparent</span>
+            <span class="pill">Always Boosted</span>
+          </div>
+        </div>
+        <div class="about-visual">
+          <div class="about-card">
+            <div class="about-card-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            </div>
+            <h3>Always Running</h3>
+            <p>Fees flow 24/7 into DEX visibility. No manual intervention needed.</p>
+          </div>
+          <div class="about-card">
+            <div class="about-card-icon orange">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 11 19-9-9 19-2-8-8-2z"/></svg>
+            </div>
+            <h3>Built to Trend</h3>
+            <p>Paid boosts and ads mean $DEX stays at the top of every feed.</p>
+          </div>
+          <div class="about-card">
+            <div class="about-card-icon green">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            </div>
+            <h3>No Hidden Fees</h3>
+            <p>Creator fees are public. What goes in comes straight back out as marketing.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="section how" id="how">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">The Mechanism</div>
+        <h2>How <span class="gradient-text">$DEX</span> works</h2>
+        <p class="section-desc">Three steps. One loop. Infinite visibility.</p>
+      </div>
+
+      <div class="how-flow">
+        <div class="how-step">
+          <div class="how-num">01</div>
+          <div class="how-icon">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <h3>Creator Fees Collected</h3>
+          <p>Every trade on $DEX generates a small creator fee. It adds up fast.</p>
+        </div>
+
+        <div class="how-arrow">
+          <svg width="40" height="16" viewBox="0 0 40 16" fill="none"><path d="M0 8h36M30 2l8 6-8 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+
+        <div class="how-step">
+          <div class="how-num">02</div>
+          <div class="how-icon orange">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          </div>
+          <h3>Fees Deployed Instantly</h3>
+          <p>Funds go directly into DEX paid listings, trending boosts, and ads — no delays, no middleman.</p>
+        </div>
+
+        <div class="how-arrow">
+          <svg width="40" height="16" viewBox="0 0 40 16" fill="none"><path d="M0 8h36M30 2l8 6-8 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+
+        <div class="how-step">
+          <div class="how-num">03</div>
+          <div class="how-icon green">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+          </div>
+          <h3>More Eyes, More Volume</h3>
+          <p>Visibility drives volume. Volume generates more fees. The loop never stops.</p>
+        </div>
+      </div>
+
+      <div class="how-cards">
+        <div class="how-feature">
+          <div class="hf-emoji">📋</div>
+          <div>
+            <h4>DEX Paid Listings</h4>
+            <p>Always showing up on DEXScreener's paid listings section — the first thing traders see.</p>
+          </div>
+        </div>
+        <div class="how-feature">
+          <div class="hf-emoji">⚡</div>
+          <div>
+            <h4>DEX Boosts</h4>
+            <p>Regular boosts keep $DEX trending and at the top of every feed, every day.</p>
+          </div>
+        </div>
+        <div class="how-feature">
+          <div class="hf-emoji">📣</div>
+          <div>
+            <h4>DEX Advertisements</h4>
+            <p>Banner ads across DEX platforms mean new eyes on $DEX around the clock.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TOKENOMICS -->
+  <section class="section tokenomics" id="tokenomics">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Tokenomics</div>
+        <h2>Simple. Clean. <span class="gradient-text">Fair.</span></h2>
+        <p class="section-desc">No hidden allocations. No vesting cliffs. Just a coin with a plan.</p>
+      </div>
+
+      <div class="token-grid">
+        <div class="token-stat">
+          <span class="token-num">1B</span>
+          <span class="token-label">Total Supply</span>
+        </div>
+        <div class="token-stat">
+          <span class="token-num">0%</span>
+          <span class="token-label">Team Allocation</span>
+        </div>
+        <div class="token-stat">
+          <span class="token-num">0%</span>
+          <span class="token-label">Tax</span>
+        </div>
+        <div class="token-stat">
+          <span class="token-num">100%</span>
+          <span class="token-label">Fees → Marketing</span>
+        </div>
+      </div>
+
+      <div class="token-breakdown">
+        <div class="tb-row">
+          <div class="tb-bar-wrap">
+            <div class="tb-label">Public / Community</div>
+            <div class="tb-bar">
+              <div class="tb-fill" style="width: 100%" data-pct="100"></div>
+            </div>
+            <div class="tb-pct">100%</div>
+          </div>
+        </div>
+        <div class="tb-note">
+          LP burned. Mint revoked. No funny business.
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="cta-banner">
+    <div class="container">
+      <div class="cta-inner">
+        <div class="cta-text">
+          <h2>Ready to ride the loop?</h2>
+          <p>Buy $DEX and let the fees do the heavy lifting.</p>
+        </div>
+        <div class="cta-actions">
+          <a href="#" class="btn btn-primary btn-lg">Buy $DEX Now</a>
+          <a href="#" class="btn btn-ghost btn-lg">Join Telegram</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="logo.png" alt="DEX logo" class="footer-logo" onerror="this.src='logo.svg'" />
+          <div>
+            <div class="footer-name">$DEX</div>
+            <div class="footer-tagline">The self-funding memecoin.</div>
+          </div>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col">
+            <h4>Navigate</h4>
+            <a href="#about">About</a>
+            <a href="#how">How It Works</a>
+            <a href="#tokenomics">Tokenomics</a>
+            <a href="#ca">Contract</a>
+          </div>
+          <div class="footer-col">
+            <h4>Community</h4>
+            <a href="#">Twitter / X</a>
+            <a href="#">Telegram</a>
+            <a href="#">DEXScreener</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>$DEX is a memecoin. Not financial advice. DYOR.</span>
+        <span>© 2025 $DEX</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
