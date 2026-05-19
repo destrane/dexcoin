@@ -251,7 +251,7 @@ img { display: block; max-width: 100%; }
 }
 .logo-ring {
   position: absolute; border-radius: 50%;
-  border: 1px solid rgba(249,115,22,0.18);
+  border: 1px solid rgba(96,165,250,0.22);
   top: 50%; left: 50%;
   transform: translate(-50%, -50%);
   animation: ringPulse 3s ease-in-out infinite;
@@ -266,9 +266,10 @@ img { display: block; max-width: 100%; }
   position: relative; z-index: 2;
   animation: heroFloat 5s ease-in-out infinite;
   box-shadow:
-    0 0 0 1px rgba(255,255,255,0.06),
-    0 0 60px rgba(249,115,22,0.2),
-    0 30px 80px rgba(0,0,0,0.6);
+    0 0 0 1px rgba(255,255,255,0.08),
+    0 0 80px rgba(37,99,235,0.45),
+    0 0 40px rgba(239,68,68,0.28),
+    0 30px 80px rgba(0,0,0,0.65);
 }
 
 /* Hero text */
