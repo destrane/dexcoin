@@ -33,7 +33,7 @@ copyBtn.addEventListener('click', () => doCopy(copyBtn, caText.textContent.trim(
 const ctaCopyBtn = document.getElementById('ctaCopyBtn');
 if (ctaCopyBtn) {
   ctaCopyBtn.addEventListener('click', () =>
-    doCopy(ctaCopyBtn, 'Hvjtx1UqKbmgc131hVSs6PrHvKh1tNY6CKX2RN3Spump')
+    doCopy(ctaCopyBtn, '3kLpV89WH6NyB9L15y5Ctcsp2dG2SHAtqdYqmAHbpump')
   );
 }
 
